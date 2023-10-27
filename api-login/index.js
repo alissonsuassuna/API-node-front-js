@@ -23,7 +23,7 @@ db.connect((err) => {
 });
 
 // Rota GET para listar dados em JSON
-app.get('/listar-clients', (req, res) => {
+app.get('/login', (req, res) => {
   const sql = 'SELECT * FROM clients';
   db.query(sql, (err, result) => {
     if (err) throw err;
